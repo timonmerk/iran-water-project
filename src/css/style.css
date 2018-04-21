@@ -12717,6 +12717,6 @@ body {
   .issue-container .button {
     margin-top: 1rem; }
 
-.end-map-container .map-image {
-  width: 100%;
-  margin-bottom: 2rem; }
+.end-map-container #map-container {
+  height: 60vh;
+  margin-bottom: 1rem; }

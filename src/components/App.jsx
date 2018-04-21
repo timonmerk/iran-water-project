@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="app-container" id="app-container">
+        <div className="app-container">
           <Route exact path="/" render={() => <Language />} />
           <Route exact path="/choose-unit" render={() => <ChooseUnit />} />
           <Route exact path="/no-unit" render={() => <NoUnit />} />

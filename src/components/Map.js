@@ -14,10 +14,8 @@ class Map extends React.Component {
 
     const defaultLayers = platform.createDefaultLayers();
 
-    const node = this.myRef.current;
-
     const map = new window.H.Map(
-      document.getElementById("app-container"),
+      document.getElementById("map-container"),
       defaultLayers.normal.map,
       {
         zoom: 10,
@@ -49,6 +47,10 @@ class Map extends React.Component {
     coordinates.map(c => {
       let marker = new window.H.map.Marker(c, { icon: icon });
       map.addObject(marker);
+      var circle = new window.H.map.Circle(c, 5000);
+
+      // Add the circle to the map:
+      map.addObject(circle);
     });
     map.setCenter(coordinates[0]);
   }

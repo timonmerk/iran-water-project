@@ -1,4 +1,5 @@
 import React from "react";
+import Map from "./Map";
 
 class MapEnd extends React.Component {
   render() {
@@ -7,8 +8,8 @@ class MapEnd extends React.Component {
         <div className="col-10 offset-1">
           <h3> ممنون از نظر شما </h3>
           <p>نزدیکترین دستگاه های تصفیه به شما</p>
-          <div className="map-container">
-            <img className="map-image" src="images/map.png" />
+          <div id="map-container">
+            <Map />
           </div>
           <p className="yellow">
             برای مسایل ضروری میتوانید با این شماره با ما تماس بگیرید
