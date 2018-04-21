@@ -33,16 +33,24 @@ class Map extends React.Component {
         '<rect stroke="white" fill="#1b468d" x="1" y="1" width="22" ' +
         'height="22" /><text x="12" y="18" font-size="12pt" ' +
         'font-family="Arial" font-weight="bold" text-anchor="middle" ' +
-        'fill="white">W</text></svg>';
+        'fill="white">اب</text></svg>';
 
         // Create an icon, an object holding the latitude and longitude, and a marker:
         var icon = new window.H.map.Icon(svgMarkup)
-        let coords = { lat: 30.513619, lng: 56.881851 }
-        let marker = new window.H.map.Marker(coords, {icon: icon})
+        let coordinates = [
+            { lat: 30.513619, lng: 56.881851 },
+            { lat: 30.470495, lng: 56.895669 },
+            { lat: 30.658778, lng: 56.707672 },
+            { lat: 30.308124, lng: 57.076137 },
+            { lat: 30.215204, lng: 56.815945 }
+        ]
 
-        // Add the marker to the map and center the map at the location of the marker:
-        map.addObject(marker)
-        map.setCenter(coords)
+        coordinates.map(c => {
+            let marker = new window.H.map.Marker(c, {icon: icon})
+            map.addObject(marker)
+        }
+        )
+        map.setCenter(coordinates[0])
 
     }
 
