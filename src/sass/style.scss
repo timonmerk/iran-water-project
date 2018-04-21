@@ -1,11 +1,92 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url(//fonts.googleapis.com/earlyaccess/notonaskharabic.css);
 
 body {
   margin: 1rem;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-body {
-  margin: 1rem;
+.app-container {
+  background-color: rgb(105, 155, 210);
+  padding: 0;
+  height: 105vh;
+  width: 100vw;
+  text-align: center;
+}
+.container {
+  padding: 5vh 0 3vh 0;
+}
+
+.title {
+  color: white;
+  font-family: "Montserrat Alternates";
+  font-weight: 200;
+  margin-bottom: 3vh;
+  padding-top: 0;
+  margin-top: 0;
+}
+.language-container {
+  width: 100vw;
+  height: 100vh;
+
+  .logo {
+    color: rgb(190, 227, 255);
+    font-size: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .language-option {
+    font-size: 4rem;
+    font-family: "Noto Naskh Arabic";
+    margin-bottom: 0;
+  }
+}
+.yellow {
+  color: rgb(254, 254, 144);
+}
+
+.pink {
+  color: rgb(255, 174, 236);
+}
+
+.orange {
+  color: rgb(252, 177, 130);
+}
+
+.sound {
+  padding-top: 0;
+  margin-top: -3rem;
+  font-size: 4rem;
+  transform: rotate(-20deg);
+  text-align: left;
+  padding-left: 1rem;
+  color: white;
+
+  .blink-me {
+    animation: blinker 2s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0.1;
+    }
+  }
+}
+
+.direction-container {
+  font-family: "Noto Naskh Arabic";
+  color: white;
+  padding-top: 3rem;
+
+  h2 {
+    margin-top: 0;
+  }
+  .icon-set {
+    width: 80%;
+    height: auto;
+    margin-bottom: 0;
+  }
 }

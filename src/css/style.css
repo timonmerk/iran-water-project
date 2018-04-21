@@ -4,6 +4,8 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(//fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -12539,5 +12541,68 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
 
-body {
-  margin: 1rem; }
+.app-container {
+  background-color: #699bd2;
+  padding: 0;
+  height: 105vh;
+  width: 100vw;
+  text-align: center; }
+
+.container {
+  padding: 5vh 0 3vh 0; }
+
+.title {
+  color: white;
+  font-family: "Montserrat Alternates";
+  font-weight: 200;
+  margin-bottom: 3vh;
+  padding-top: 0;
+  margin-top: 0; }
+
+.language-container {
+  width: 100vw;
+  height: 100vh; }
+  .language-container .logo {
+    color: #bee3ff;
+    font-size: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .language-container .language-option {
+    font-size: 4rem;
+    font-family: "Noto Naskh Arabic";
+    margin-bottom: 0; }
+
+.yellow {
+  color: #fefe90; }
+
+.pink {
+  color: #ffaeec; }
+
+.orange {
+  color: #fcb182; }
+
+.sound {
+  padding-top: 0;
+  margin-top: -3rem;
+  font-size: 4rem;
+  transform: rotate(-20deg);
+  text-align: left;
+  padding-left: 1rem;
+  color: white; }
+  .sound .blink-me {
+    animation: blinker 2s linear infinite; }
+
+@keyframes blinker {
+  50% {
+    opacity: 0.1; } }
+
+.direction-container {
+  font-family: "Noto Naskh Arabic";
+  color: white;
+  padding-top: 3rem; }
+  .direction-container h2 {
+    margin-top: 0; }
+  .direction-container .icon-set {
+    width: 80%;
+    height: auto;
+    margin-bottom: 0; }
