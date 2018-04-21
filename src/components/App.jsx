@@ -5,6 +5,7 @@ import NoUnit from "./NoUnit";
 import ChooseUnit from "./ChooseUnit";
 import ReportIssue from "./ReportIssue";
 import Direction from "./Direction";
+import MapEnd from "./MapEnd";
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <Route exact path="/direction" render={() => <Direction />} />
           <Route exact path="/no-unit" render={() => <NoUnit />} />
           <Route exact path={`/:id`} render={() => <ReportIssue />} />
+          <Route exact path={`/map-end`} render={() => <MapEnd />} />
         </div>
       </BrowserRouter>
     );

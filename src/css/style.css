@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url(//fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+@import url("https://fonts.googleapis.com/earlyaccess/notonaskharabic.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
@@ -6268,9 +6268,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
-
-body {
-  margin: 1rem; }
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -12541,15 +12538,27 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
 
+body {
+  margin: none;
+  font-family: "Noto Naskh Arabic"; }
+  body a,
+  body a:visited,
+  body a:hover,
+  body a:active {
+    text-decoration: none;
+    color: white; }
+
 .app-container {
   background-color: #699bd2;
   padding: 0;
+  margin: 0;
   height: 105vh;
   width: 100vw;
   text-align: center; }
 
 .container {
-  padding: 5vh 0 3vh 0; }
+  padding: 5vh 0 3vh 0;
+  margin: 0; }
 
 .title {
   color: white;
@@ -12560,6 +12569,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0; }
 
 .language-container {
+  background-color: #699bd2;
   width: 100vw;
   height: 100vh; }
   .language-container .logo {
@@ -12606,3 +12616,33 @@ a.text-dark:hover, a.text-dark:focus {
     width: 80%;
     height: auto;
     margin-bottom: 0; }
+
+.no-unit {
+  padding-top: 5rem;
+  color: white; }
+  .no-unit .btn-circle {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    background-color: red;
+    display: block; }
+    .no-unit .btn-circle .fa-microphone {
+      padding-top: 0.5rem;
+      font-size: 2rem;
+      color: white; }
+
+.button {
+  margin-top: 3rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 2px solid #fefe90;
+  display: inline-block;
+  color: #fefe90; }

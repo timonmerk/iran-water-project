@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Direction extends React.Component {
   render() {
@@ -9,7 +10,9 @@ class Direction extends React.Component {
         <div className="row">
           <div className="col-5 offset-1">
             <img src="/images/icon5.png" class="icon-set" alt="no access" />
-            <p>دستگاه نداریم</p>
+            <p>
+              <Link to="/no-unit">دستگاه نداریم</Link>
+            </p>
           </div>
           <div className="col-5">
             <img src="/images/icon1.png" class="icon-set" alt="broken" />
