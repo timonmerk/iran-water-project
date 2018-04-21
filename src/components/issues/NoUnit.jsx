@@ -1,23 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class LowPressure extends React.Component {
+class NoUnit extends React.Component {
   render() {
     return (
       <div className="issue-container container">
         <div className="col-10 offset-1">
           <img
-            src="/images/icon4.png"
+            src="/images/icon5.png"
             class="icon-big image-fluid"
-            alt="low pressure"
+            alt="no water"
           />
-          <h2>خراب است</h2>
+          <h2>دستگاه نداریم</h2>
 
           <div className="row">
-            <div className="col-10 offset-1">
-              <h5>
-                لطفا برای ضبط مشکلی که در مورد دستگاه دارید، دکمه را فشار دهید
-              </h5>
+            <div className="col-12">
+              <h5> لطفا برای ضبط نام کوره و موقعیت آن، دکمه را فشار دهید</h5>
             </div>
           </div>
           <div className="btn-circle">
@@ -38,4 +36,4 @@ class LowPressure extends React.Component {
   }
 }
 
-export default LowPressure;
+export default NoUnit;
