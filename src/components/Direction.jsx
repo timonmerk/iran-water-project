@@ -15,8 +15,10 @@ class Direction extends React.Component {
             </p>
           </div>
           <div className="col-5">
-            <img src="/images/icon1.png" class="icon-set" alt="broken" />
-            <p>خراب است</p>
+            <Link to="/broken">
+              <img src="/images/icon1.png" class="icon-set" alt="broken" />
+              <p>خراب است</p>
+            </Link>
           </div>
         </div>
         <div className="row">

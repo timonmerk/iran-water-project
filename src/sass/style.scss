@@ -12,7 +12,6 @@ body {
   a:hover,
   a:active {
     text-decoration: none;
-    color: white;
   }
 }
 
@@ -46,7 +45,8 @@ body {
     color: rgb(190, 227, 255);
     font-size: 3rem;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
   }
 
   .language-option {
@@ -55,25 +55,47 @@ body {
     margin-bottom: 0;
   }
 }
+
 .yellow {
   color: rgb(254, 254, 144);
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: rgb(254, 254, 144);
+  }
 }
 
 .pink {
   color: rgb(255, 174, 236);
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: rgb(255, 174, 236);
+  }
 }
 
 .orange {
   color: rgb(252, 177, 130);
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: rgb(252, 177, 130);
+  }
 }
 
 .sound {
   padding-top: 0;
-  margin-top: -3rem;
+  width: 20%;
   font-size: 4rem;
   transform: rotate(-20deg);
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: white;
 
   .blink-me {
@@ -87,10 +109,22 @@ body {
   }
 }
 
-.direction-container {
+.direction-container,
+.choose-unit,
+.no-unit,
+.issue-container,
+.end-map-container {
   font-family: "Noto Naskh Arabic";
   color: white;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
 
   h2 {
     margin-top: 0;
@@ -105,34 +139,67 @@ body {
 .no-unit {
   padding-top: 5rem;
   color: white;
-  .btn-circle {
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 1.33;
-    background-color: red;
-    display: block;
+}
 
-    .fa-microphone {
-      padding-top: 0.5rem;
-      font-size: 2rem;
-      color: white;
-    }
+.btn-circle {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+  background-color: red;
+  display: block;
+  z-index: -0.9;
+
+  .fa-microphone {
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: white;
+    z-index: -1;
   }
 }
 
 .button {
+  z-index: 1000000;
   margin-top: 3rem;
   font-weight: 600;
   font-size: 1.7rem;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border: 2px solid rgb(254, 254, 144);
   display: inline-block;
   color: rgb(254, 254, 144);
+}
+
+.issue-container {
+  padding-top: 1.5rem;
+
+  .fa-volume-up {
+    font-size: 3rem;
+    margin-left: -2rem;
+  }
+  .icon-big {
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  .btn-circle {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .button {
+    margin-top: 1rem;
+  }
+}
+
+.end-map-container {
+  .map-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }

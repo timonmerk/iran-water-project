@@ -10,18 +10,18 @@ class Language extends React.Component {
             <i class="fa fa-tint" />
           </div>
           <h1 className="title">Choose Language</h1>
-          <h4>
-            <Link to="/Direction" className="language-option orange">
+          <h4 className="orange">
+            <Link to="/choose-unit" className="language-option">
               فارسی
             </Link>
           </h4>
-          <h4>
-            <Link to="/Direction" className="language-option pink">
+          <h4 className="pink">
+            <Link to="/Direction" className="language-option">
               پښتو‎
             </Link>
           </h4>
-          <h4>
-            <Link to="/Direction" className="language-option yellow">
+          <h4 className="yellow">
+            <Link to="/Direction" className="language-option ">
               دری‎
             </Link>
           </h4>
